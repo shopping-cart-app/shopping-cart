@@ -12,6 +12,7 @@ node('maven-label') {
    }
    stage('ref lib demo'){
     sayHai "Jenkins"
+    input 'select environemnt dev it'
    }
    stage('Preparation') { // for display purposes
       
