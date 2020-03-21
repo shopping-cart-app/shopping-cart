@@ -3,7 +3,7 @@ node('maven-label') {
    def mvnHome
    
    stage('sharedlib demo'){
-    sayhello "Jenkins"
+    sayHello "Jenkins"
    }
    stage('Preparation') { // for display purposes
       
