@@ -1,9 +1,17 @@
 @Library('pipeline-library-demo')_
+
+def sayHai(String name = 'human') {
+  echo "Hello, ${name}."
+  echo "Hello, ${name}."
+}
 node('maven-label') {
    def mvnHome
    
    stage('sharedlib demo'){
     sayHello "Jenkins"
+   }
+   stage('ref lib demo'){
+    sayHai "Jenkins"
    }
    stage('Preparation') { // for display purposes
       
