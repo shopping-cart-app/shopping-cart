@@ -1,5 +1,10 @@
+@Library('pipeline-library-demo')_
 node('maven-label') {
    def mvnHome
+   
+   stage('sharedlib demo'){
+    sayhello "Jenkins"
+   }
    stage('Preparation') { // for display purposes
       
       git 'https://github.com/shopping-cart-app/shopping-cart.git'
